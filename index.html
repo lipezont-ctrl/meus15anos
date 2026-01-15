@@ -4,20 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Convite 15 Anos</title>
+
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 420px; /* largura do convite */
+    }
+
+    .container img {
+      width: 100%;
+      display: block;
+    }
+
+    .botao {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+    }
+
+    /* POSIÇÕES — AJUSTÁVEIS */
+    .whatsapp {
+      bottom: 460px; /* sobe ou desce */
+      right: 70px;   /* esquerda/direita */
+    }
+
+    .local {
+      bottom: 460px;
+      left: 70px;
+    }
+  </style>
 </head>
-<body style="margin:0; text-align:center;">
 
-  <img src="convite.jpg" style="max-width:100%; height:auto;">
+<body>
 
-  <div style="margin:20px;">
-    <a href="https://wa.me/5563992096239" target="_blank">
-      <img src="https://img.icons8.com/color/96/whatsapp.png" width="80">
+  <div class="container">
+    <!-- IMAGEM -->
+    <img src="convite.jpg" alt="Convite 15 anos">
+
+    <!-- BOTÃO LOCAL -->
+    <a
+      href="https://www.google.com/maps/search/CDL+Palmas"
+      class="botao local"
+      target="_blank"
+      aria-label="Local da festa">
     </a>
 
-    &nbsp;&nbsp;&nbsp;
-
-    <a href="https://www.google.com/maps/search/CDL+Palmas" target="_blank">
-      <img src="https://img.icons8.com/color/96/marker.png" width="80">
+    <!-- BOTÃO WHATSAPP -->
+    <a
+      href="https://wa.me/5563992096239"
+      class="botao whatsapp"
+      target="_blank"
+      aria-label="Confirmar presença no WhatsApp">
     </a>
   </div>
 
