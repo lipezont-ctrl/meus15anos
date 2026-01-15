@@ -10,57 +10,50 @@
       margin: 0;
       display: flex;
       justify-content: center;
+      background: #fff;
     }
 
-    .container {
+    .convite {
       position: relative;
       width: 100%;
-      max-width: 420px; /* largura do convite */
+      max-width: 420px;
+      aspect-ratio: 420 / 1680; /* proporção da imagem */
+      background: url("convite.jpg") no-repeat center top;
+      background-size: contain;
     }
 
-    .container img {
-      width: 100%;
-      display: block;
-    }
-
-    .botao {
+    .link {
       position: absolute;
-      width: 80px;
-      height: 80px;
-      cursor: pointer;
+      width: 90px;
+      height: 90px;
     }
 
-    /* POSIÇÕES — AJUSTÁVEIS */
-    .whatsapp {
-      bottom: 460px; /* sobe ou desce */
-      right: 70px;   /* esquerda/direita */
+    /* AJUSTE FINO AQUI */
+    .link-local {
+      top: 520px;
+      left: 60px;
     }
 
-    .local {
-      bottom: 460px;
-      left: 70px;
+    .link-whatsapp {
+      top: 520px;
+      right: 60px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
-    <!-- IMAGEM -->
-    <img src="convite.jpg" alt="Convite 15 anos">
-
-    <!-- BOTÃO LOCAL -->
+  <div class="convite">
     <a
       href="https://www.google.com/maps/search/CDL+Palmas"
-      class="botao local"
+      class="link link-local"
       target="_blank"
       aria-label="Local da festa">
     </a>
 
-    <!-- BOTÃO WHATSAPP -->
     <a
       href="https://wa.me/5563992096239"
-      class="botao whatsapp"
+      class="link link-whatsapp"
       target="_blank"
       aria-label="Confirmar presença no WhatsApp">
     </a>
