@@ -12,6 +12,7 @@
 
     .container {
       position: relative;
+      width: 100%;
     }
 
     img {
@@ -21,26 +22,33 @@
     }
 
     a {
+      position: absolute;
       display: block;
     }
 
-    /* 📍 LOCAL DA FESTA */
+    /* 📍 LOCAL DA FESTA (ícone da esquerda) */
     .link-local {
-      position: absolute;
-      top: 48%;
+      top: 53%;
       left: 18%;
-      width: 18%;
-      height: 6%;
+      width: 22%;
+      height: 8%;
     }
 
-    /* 💬 WHATSAPP - CONFIRMAR PRESENÇA */
+    /* 💬 WHATSAPP (ícone da direita) */
     .link-whats {
-      position: absolute;
-      top: 48%;
-      left: 52%;
+      top: 53%;
+      left: 55%;
       width: 22%;
-      height: 6%;
+      height: 8%;
     }
+
+    /* 🔧 APENAS PARA TESTE — REMOVER DEPOIS */
+    /*
+    .link-local,
+    .link-whats {
+      background: rgba(255, 0, 0, 0.25);
+    }
+    */
   </style>
 </head>
 <body>
@@ -48,13 +56,17 @@
   <div class="container">
     <img src="convite.jpg" alt="Convite de 15 Anos">
 
-    <a href="https://www.google.com/search?client=safari&hs=Tvp9&sca_esv=492d03d456b59a14&channel=iphone_bm&kgmid=%2Fg%2F1vgw9q4d&q=C%C3%A2mara%20de%20Dirigentes%20Lojistas%20de%20Palmas%20I%20CDL%20Palmas%20I%20Cuidar%20do%20com%C3%A9rcio%20%C3%A9%20nossa%20especialidade&shem=bdsle%2Cepsd1%2Cptotple&shndl=30&source=sh%2Fx%2Floc%2Fact%2Fm1%2F3&kgs=72edeacb1658ce82"
+    <!-- 📍 LOCAL -->
+    <a class="link-local"
+       href="https://www.google.com/search?client=safari&hs=Tvp9&sca_esv=492d03d456b59a14&channel=iphone_bm&kgmid=%2Fg%2F1vgw9q4d&q=C%C3%A2mara%20de%20Dirigentes%20Lojistas%20de%20Palmas%20I%20CDL%20Palmas"
        target="_blank"
-       class="link-local"></a>
+       aria-label="Local da festa"></a>
 
-    <a href="https://wa.me/5563992096239"
+    <!-- 💬 WHATSAPP -->
+    <a class="link-whats"
+       href="https://wa.me/5563992096239"
        target="_blank"
-       class="link-whats"></a>
+       aria-label="Confirmar presença no WhatsApp"></a>
   </div>
 
 </body>
